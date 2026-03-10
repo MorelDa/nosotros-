@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Party | History & Heritage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #FF2C54;
+            --black: #111111;
+            --white: #ffffff;
+            --bg: #f9f9f9;
+            --border: rgba(0,0,0,0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--black);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* --- PRELOADER MINIMALISTA --- */
+        .loader {
+            position: fixed;
+            inset: 0;
+            background: var(--white);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.8s ease;
+        }
+        .loader.hide { opacity: 0; pointer-events: none; }
+        .loader-text { font-family: 'Syne'; font-size: 0.7rem; letter-spacing: 5px; text-transform: uppercase; }
+
+        /* --- LAYOUT PROFESIONAL --- */
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        /* Cabecera Técnica */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 60px;
+        }
+
+        .brand-name { font-family: 'Syne'; font-weight: 800; text-transform: uppercase; font-size: 1.2rem; }
+        .anniversary-badge { font-weight: 700; font-size: 0.75rem; border: 1px solid var(--black); padding: 5px 15px; border-radius: 50px; }
+
+        /* Sección Titular */
+        .hero-section {
+            margin-bottom: 100px;
+        }
+
+        .hero-section h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(3rem, 12vw, 9rem);
+            line-height: 0.8;
+            letter-spacing: -5px;
+            text-transform: uppercase;
+        }
+
+        .hero-section span { color: var(--accent); }
+
+        /* Rejilla de Información (Side-by-side profesional) */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            padding-top: 60px;
+            border-top: 1px solid var(--border);
+        }
+
+        .column-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--accent);
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .story-content h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            line-height: 1;
+        }
+
+        .story-content p {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 25px;
+            max-width: 550px;
+        }
+
+        .story-content strong { color: var(--black); font-weight: 700; }
+
+        /* Data Points */
+        .data-summary {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .data-item {
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+
+        .data-num { font-family: 'Syne'; font-size: 2rem; display: block; line-height: 1; }
+        .data-desc { font-size: 0.7rem; text-transform: uppercase; font-weight: 600; color: #888; }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 900px) {
+            .info-grid { grid-template-columns: 1fr; gap: 60px; }
+            .main-container { padding: 20px; }
+            .hero-section h1 { letter-spacing: -2px; }
+            .data-summary { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="loader" id="loader">
+        <div class="loader-text">Radio Party / Corporate Identity</div>
+    </div>
+
+    <div class="main-container">
+        <div class="top-bar">
+            <div class="brand-name">Radio<span>Party</span></div>
+            <div class="anniversary-badge">EST. 2026</div>
+        </div>
+
+        <section class="hero-section">
+            <h1>HISTORY OF<br><span>RADIO PARTY</span></h1>
+        </section>
+
+        <main class="info-grid">
+            
+            <div class="story-column">
+                <span class="column-label">01 / Origins</span>
+                <div class="story-content">
+                    <h2>San Pedro, Paraguay</h2>
+                    <p>
+                        El proyecto se originó en el segundo departamento de <strong>San Pedro, Paraguay</strong>. Fundado por <strong>Kevin</strong>, el concepto nació de la integración de métodos de transmisión digital vía internet, permitiendo romper las fronteras físicas desde el primer día.
+                    </p>
+                    <p>
+                        Bajo principios sólidos de comunicación, el proyecto superó los desafíos iniciales de infraestructura para convertirse en una realidad tecnológica.
+                    </p>
+                </div>
+            </div>
+
+            <div class="story-column">
+                <span class="column-label">02 / Expansion</span>
+                <div class="story-content">
+                    <h2>Valencia, España</h2>
+                    <p>
+                        Tras un proceso de transición y búsqueda de nuevas oportunidades de vida, el proyecto se trasladó al corazón de <strong>Valencia, España</strong>.
+                    </p>
+                    <p>
+                        Hoy, 4 años después del lanzamiento oficial a la audiencia, Radio Party se consolida como una marca referente de fe y constancia en la industria.
+                    </p>
+
+                    <div class="data-summary">
+                        <div class="data-item">
+                            <span class="data-num">4</span>
+                            <span class="data-desc">Años de Trayectoria</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-num">2</span>
+                            <span class="data-desc">Continentes Unidos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hide');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
